@@ -61,7 +61,7 @@ jobs:
            reviewApiUrl=${{ inputs.reviewApiUrl }}
            reviewApiKey=${{ secrets.reviewApiKey }}
          additionalArguments: --what-if
-
+         
   deploy:
     needs: validate
     environment: ${{ inputs.environmentType }}
