@@ -16,7 +16,7 @@ jobs:
     uses: ./.github/workflows/deploy.yml
     needs: lint
     with:
-      environmentType: Test
+      environmentType: Test 
       resourceGroupName: ToyWebsiteTest
       reviewApiUrl: https://sandbox.contoso.com/reviews
     secrets:
