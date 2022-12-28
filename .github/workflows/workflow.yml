@@ -8,6 +8,8 @@ on:
   workflow_dispatch:
 
 jobs:
+
+  # Lint the Bicep file.
   lint:
     uses: ./.github/workflows/lint.yml
 
