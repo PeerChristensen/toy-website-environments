@@ -57,9 +57,9 @@ jobs:
          resourceGroupName: ${{ inputs.resourceGroupName }}
          template: ./deploy/main.bicep
          parameters: >
-           environmentType=${{ inputs.environmentType }}
-           reviewApiUrl=${{ inputs.reviewApiUrl }}
-           reviewApiKey=${{ secrets.reviewApiKey }}
+          environmentType=${{ inputs.environmentType }}
+          reviewApiUrl=${{ inputs.reviewApiUrl }}
+          reviewApiKey=${{ secrets.reviewApiKey }}
          additionalArguments: --what-if
   deploy:
     needs: validate
